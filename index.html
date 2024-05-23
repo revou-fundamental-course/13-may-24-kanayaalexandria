@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, instal-scale=1.0">
+    <title>KALKULTI</title>  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="judul">
+        <h3>Welcome to KALKULTI</h3>
+        <section class="paragraf">
+            <p>Halo kawan, selamat datang di KALKULTI!</p>
+        </section>
+    </header>
+
+    <header class="tb">
+        <section>
+            <div class="segitiga">
+                <h4>Segitiga</h4>
+            </div>
+
+            <img src="assest/rumus.png">
+            <p class="isi">Segitiga adalah bentuk bangun datar yang memiliki tiga sisi dan tiga sudut dengan panjang atau besar yang sama maupun berbeda-beda. <br>Segitiga sendiri terbagi menjadi dua jenis, yaitu segitiga yang dilihat berdasarkan sisinya dan segitiga yang dilihat berdasarkan besaran sudutnya.</p>
+       
+         <div id="rp">
+            <p class="kl"><b>Rumus keliling segitiga:</b><br>K= a + b + c</p>
+            <p class="ls"><b>Rumus luas segitiga:</b><br>L = ½ x a x t</p>
+            <p class="pr">K : keliling<br>L : luas<br>a : alas<br>t : tinggi</p>
+         </div>
+
+            <section>
+                <div id="container">
+
+                    <div class="rumuskeling">
+                        <p class="lh"><b>Latihan!</b></p>
+                        <img class="kg" src="assest/keliling.png">
+                
+
+                        <input id="a" type="number" name="a">
+                            <label>+</label>
+                        <input id="b" type="number" name="b">
+                            <label class="m">+</label>
+                        <input id="c" type="number" name="c"> <br> <br>
+                            <label class="n">Hasil:</label>
+                        <input class="v" type="number" id="keliling" name="keliling" disabled="true"> <br>
+                        <button value="hitung" onclick="kelilingsegitiga()">Hitung</button>
+                        <button class="reset" value="reset" onclick="kelilingreset()">Reset</button>              
+                    </div>
+
+                </div>
+            </section>
+
+             <section>
+                <div class="rumusluas">
+                    <p class="ln"><b>Latihan!</b></p>
+                    <p class="in">Tentukan luas segitiga dibawah ini</p>
+                    <img class="lu" src="assest/luas.png">
+               
+                    <label>½ x</label>
+                    <input id="alas" type="number" name="alas">
+                        <label class="x">X</label>
+                    <input id="tinggi" type="number" name="tinggi"> <br>
+                        <label class="h">Hasil:</label>
+                    <input type="number" id="luas" name="luas" disabled="true"> <br>
+                    <button value="hitung" onclick="luassegitiga()">Hitung</button>
+                    <button class="reset" value="reset" onclick="luasreset()">Reset</button>
+                </div>
+            </section>
+
+        </section>
+
+    </header>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
